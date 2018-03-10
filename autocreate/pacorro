@@ -1,0 +1,4 @@
+from django.contrib.auth.signals import user_logged_in, user_logged_out
+from .receivers import *
+
+user_logged_in.connect(pacocreator)
